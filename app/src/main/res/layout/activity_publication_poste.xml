@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/llMediaPoste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/com_facebook_profile_picture_blank_square"
+                android:id="@+id/ivMediaPoste"
+                android:adjustViewBounds="true"
+                android:focusable="true"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom|end">
+
+                <Button
+                    android:id="@+id/btnchoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:layout_gravity="bottom|start"/>
+
+                <Button
+                    android:id="@+id/btntake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:layout_gravity="bottom|end"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INFO "/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#000"
+                    android:layout_gravity="center"/>
+                </LinearLayout>
+
+            <com.gregacucnik.EditTextView
+                android:id="@+id/etNom"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:ettIcon="@drawable/ic_short_text_black_24dp"
+                app:ettIconEmpty="@drawable/ic_short_text_black_24dp"
+                app:ettIconInEditMode="@drawable/ic_short_text_black_24dp"
+                app:ettEmptyTexStyle="normal"
+                app:ettShowHint="false"
+                app:ettEmptyText="NOM&#8230;" />
+
+
+
+            <com.gregacucnik.EditTextView
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:ettIcon="@drawable/ic_description_black_24dp"
+                app:ettIconEmpty="@drawable/ic_description_black_24dp"
+                app:ettIconInEditMode="@drawable/ic_description_black_24dp"
+                app:ettEmptyTexStyle="normal"
+                app:ettShowHint="false"
+                app:ettEmptyText="Description&#8230;" />
+
+
+            <com.gregacucnik.EditTextView
+                android:id="@+id/etPrix"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="numberDecimal"
+                app:ettIcon="@drawable/ic_attach_money_black_24dp"
+                app:ettIconEmpty="@drawable/ic_attach_money_black_24dp"
+                app:ettIconInEditMode="@drawable/ic_attach_money_black_24dp"
+                app:ettEmptyTexStyle="normal"
+                app:ettShowHint="false"
+                app:ettEmptyText="Prix&#8230;" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TYPE "/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#000"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerTypePublication"
+                android:spinnerMode="dialog"
+                android:dropDownWidth="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CARACTERISTIQUE "/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#000"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_liste_caracteristique">
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Ajouter"
+                    android:id="@+id/btn_ajouter_caracteristique"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HASHTAG "/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#000"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <me.gujun.android.taggroup.TagGroup
+                android:id="@+id/taggroupe_hashtag"
+                app:atg_isAppendMode="true"
+                app:atg_textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|end">
+
+            <Button
+                android:id="@+id/btnPublier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publier"
+                android:layout_weight="3"
+                android:background="@color/green"
+                android:layout_gravity="bottom|start"/>
+
+            <Button
+                android:id="@+id/btnAnnuler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:layout_gravity="bottom|end"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

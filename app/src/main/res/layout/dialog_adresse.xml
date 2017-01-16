@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gregacucnik.EditTextView
+        android:id="@+id/etAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ettIcon="@drawable/ic_short_text_black_24dp"
+        app:ettIconEmpty="@drawable/ic_short_text_black_24dp"
+        app:ettIconInEditMode="@drawable/ic_short_text_black_24dp"
+        app:ettEmptyTexStyle="normal"
+        app:ettShowHint="false"
+        app:ettEmptyText="ADRESSE&#8230;" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verifier"
+        android:id="@+id/btn_verification"
+        android:drawableRight="@drawable/ic_search_black_24dp"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Geolocaliser"
+        android:id="@+id/btn_geolocaliser"
+        android:drawableRight="@mipmap/ic_room_black_36dp"/>
+
+</LinearLayout>

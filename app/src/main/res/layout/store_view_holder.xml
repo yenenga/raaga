@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000">
+
+        <ImageView
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:id="@+id/iv_image_store"
+            android:layout_gravity="center"
+            android:src="@drawable/raaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:textStyle="bold"
+            android:layout_weight="60"
+            android:text="nom produit"
+            android:textColor="@color/blue"
+            android:id="@+id/tv_nom_store" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:textStyle="bold"
+            android:layout_weight="30"
+            android:text="type"
+            android:textColor="@color/blue"
+            android:id="@+id/tv_type_store" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="description du produit"
+            android:maxLines="3"
+            android:id="@+id/tv_description_store"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:textColor="@color/blue"
+            android:paddingTop="10dp"
+            android:text="distance : "
+            android:maxLines="1"
+            android:id="@+id/tv_distance_store"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:text="suivre"
+            android:id="@+id/btn_suivre_store" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:text="partager"
+            android:id="@+id/btn_partage_store"
+            android:actionProviderClass=
+                "android.widget.ShareActionProvider"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

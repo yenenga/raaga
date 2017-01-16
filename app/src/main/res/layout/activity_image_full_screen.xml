@@ -1,0 +1,25 @@
+<!-- activity_screen_slide.xml -->
+
+<RelativeLayout
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="close"
+        android:id="@+id/btn_close"
+        android:layout_margin="5dp"
+        android:background="#ff6060"
+        android:layout_alignBottom="@id/pager"
+        android:layout_alignRight="@id/pager"/>
+
+</RelativeLayout>

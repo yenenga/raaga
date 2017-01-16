@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/slider_boutique"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Nom du produit"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/tv_nom_boutique" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u003c\u003c\u003c------TYPE------\u003e\u003e\u003e"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="type du store"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:id="@+id/tv_type_store"
+                    android:shadowColor="#872626" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u003c\u003c\u003c------DESCRIPTION------\u003e\u003e\u003e"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="description du produit"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:id="@+id/tv_detail_boutique"
+                    android:shadowColor="#872626" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u003c\u003c\u003c------Adresse------\u003e\u003e\u003e"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="type du store"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:id="@+id/tv_adresse_store"
+                    android:shadowColor="#872626" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u003c\u003c\u003c------QR code------\u003e\u003e\u003e"
+                android:gravity="center"/>
+
+            <ImageView
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_qrcode_store"
+                android:background="@android:drawable/dialog_holo_light_frame"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="contact"
+                android:gravity="center"
+                android:drawableRight="@mipmap/ic_local_phone_black_24dp"
+                android:id="@+id/btn_contacte" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cart"
+                android:drawableRight="@mipmap/ic_room_black_36dp"
+                android:id="@+id/btn_carte"
+                android:gravity="center"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="partager"
+                android:gravity="center"
+                android:drawableRight="@mipmap/ic_share_black_18dp"
+                android:id="@+id/btn_partager"
+                android:allowUndo="false" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableRight="@drawable/ic_star_rate_black_18dp"
+                android:text="Follow"
+                android:id="@+id/btn_follow"
+                android:allowUndo="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/llMediaPoste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Service"
+                android:textColor="#ff0000"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/com_facebook_profile_picture_blank_square"
+                android:id="@+id/ivMediaPoste"
+                android:adjustViewBounds="true"
+                android:focusable="true"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom|end">
+
+                <Button
+                    android:id="@+id/btnchoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:layout_gravity="bottom|start"/>
+
+                <Button
+                    android:id="@+id/btntake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:layout_gravity="bottom|end"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:hint="Nom"
+                android:ems="10"
+                android:id="@+id/etNom"
+                android:textColor="?attr/textColorAlertDialogListItem" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:inputType="textMultiLine"
+                android:hint="Description"
+                android:ems="10"
+                android:id="@+id/etDescription"
+                android:textColor="?attr/textColorAlertDialogListItem" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerTypePublication"
+                android:spinnerMode="dialog"
+                android:dropDownWidth="match_parent" />
+
+            <me.gujun.android.taggroup.TagGroup
+                android:id="@+id/taggroupe_hashtag"
+                app:atg_isAppendMode="true"
+                app:atg_textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|end">
+
+            <Button
+                android:id="@+id/btnPublier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publier"
+                android:layout_weight="3"
+                android:background="@color/green"
+                android:layout_gravity="bottom|start"/>
+
+            <Button
+                android:id="@+id/btnAnnuler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:layout_gravity="bottom|end"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

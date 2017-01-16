@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.gregacucnik.EditTextView
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:ettIcon="@drawable/ic_description_black_24dp"
+        app:ettIconEmpty="@drawable/ic_description_black_24dp"
+        app:ettIconInEditMode="@drawable/ic_description_black_24dp"
+        app:ettEmptyTexStyle="normal"
+        app:ettShowHint="false"
+        app:ettEmptyText="Texte&#8230;" />
+
+
+
+
+
+</LinearLayout>

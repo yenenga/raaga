@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/raaga"
+        android:layout_gravity="center"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bienvenu au marche"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal|bottom" />
+
+</FrameLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_principale"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="350dp"
+                    android:id="@+id/slider"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u003c\u003c\u003c------NOM------\u003e\u003e\u003e"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Nom du produit"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/tv_nom_poste" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_weight="0.5"
+                    android:textColor="#eaff0000"
+                    android:text="0 Fcfa"
+                    android:id="@+id/tv_prix_poste" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u003c\u003c\u003c------TYPE------\u003e\u003e\u003e"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="type du produit"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:id="@+id/tv_type_poste"
+                    android:shadowColor="#872626" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u003c\u003c\u003c------DETAIL------\u003e\u003e\u003e"
+                android:gravity="center"/>
+            <LinearLayout
+                android:id="@+id/ll_detail_poste"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="description du produit"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:id="@+id/tv_description_poste"
+                    android:shadowColor="#872626" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_des_caracteristique"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:id="@+id/tv_caracteristique"
+                android:background="@android:drawable/dialog_holo_light_frame"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u003c\u003c\u003c------AUTRES------\u003e\u003e\u003e"
+                android:gravity="center"/>
+
+            <FrameLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fl_autre_produit"
+                android:background="@android:drawable/dialog_holo_light_frame"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u003c\u003c\u003c------QR code------\u003e\u003e\u003e"
+                android:gravity="center"/>
+
+            <ImageView
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_qrcode_poste"
+                android:background="@android:drawable/dialog_holo_light_frame"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u003c\u003c\u003c------ACTIONS------\u003e\u003e\u003e"
+                android:gravity="center"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="vendeur"
+                        android:gravity="center"
+                        android:drawableRight="@drawable/ic_store_black_24dp"
+                        android:id="@+id/btn_vendeur" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="cart"
+                        android:drawableRight="@mipmap/ic_room_black_36dp"
+                        android:id="@+id/btn_carte"
+                        android:gravity="center"
+                        android:clickable="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="partager"
+                        android:gravity="center"
+                        android:drawableRight="@mipmap/ic_share_black_18dp"
+                        android:id="@+id/btn_partager"
+                        android:allowUndo="false" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableRight="@drawable/ic_favorite_black_24dp"
+                        android:text="favoris"
+                        android:id="@+id/btn_favoris"
+                        android:allowUndo="false" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
